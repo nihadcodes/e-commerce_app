@@ -1,0 +1,1 @@
+ H:\\1NIhad\\Flutter\\e-commerce\\craft_bay\\.dart_tool\\flutter_build\\139670692d3244d806df41dc13e46d9d\\native_assets.yaml: 
