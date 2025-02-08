@@ -18,6 +18,21 @@ class CraftBay extends StatelessWidget {
         ),
         textTheme: _textTheme(),
         inputDecorationTheme:_inputDecorationTheme(),
+        elevatedButtonTheme: ElevatedButtonThemeData(
+          style: ElevatedButton.styleFrom(
+              fixedSize: Size.fromWidth(double.maxFinite),
+              padding: const EdgeInsets.symmetric(vertical: 12),
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(4),
+              ),
+              backgroundColor: AppColors.primaryColor,
+              foregroundColor: Colors.white,
+              textStyle: TextStyle(
+                  fontWeight: FontWeight.w500,
+                  fontSize: 16
+              ),
+          ),
+        )
 
       ),
     );
@@ -37,7 +52,13 @@ class CraftBay extends StatelessWidget {
   );
 
 
+
+
 InputDecorationTheme _inputDecorationTheme() => InputDecorationTheme(
+  hintStyle: TextStyle(
+    color: Colors.grey,
+    fontWeight: FontWeight.w400
+  ),
   border: _outlineInputBorder,
   enabledBorder: _outlineInputBorder,
   focusedBorder: _outlineInputBorder,
